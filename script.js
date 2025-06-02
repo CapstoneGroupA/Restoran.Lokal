@@ -20,3 +20,14 @@ document.getElementById("formKontak").addEventListener("submit", function(e) {
       alert("❌ Terjadi kesalahan. Silakan coba lagi.");
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const waButton = document.getElementById("waButton");
+  const waChatbox = document.getElementById("waChatbox");
+
+  let visible = false;
+
+  waButton.addEventListener("click", () => {
+    visible = !visible;
+    waChatbox.style.display = visible ? "block" : "none";
+  });
+});
